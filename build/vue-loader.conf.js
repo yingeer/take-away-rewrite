@@ -18,5 +18,9 @@ module.exports = {
     source: 'src',
     img: 'src',
     image: 'xlink:href'
+  },
+  avatar: ['default-src'],
+  compilerOptions: {
+    preserveWhitespace: false
   }
 }
