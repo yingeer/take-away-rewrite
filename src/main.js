@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import FastClick from 'fastclick'
+import './assets/iconfont/css/iconfont.css'
 
 Vue.config.productionTip = false
 /* eslint-disable no-new */
