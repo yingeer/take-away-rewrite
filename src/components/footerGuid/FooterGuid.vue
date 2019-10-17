@@ -44,16 +44,17 @@ export default {
 
 <style lang="stylus" rel="stylesheet/stylus">
 @import '../../assets/stylus/mixin.styl'
+$backgroundColor = #FFF
 .footer_guide
-  /*顶部有白色的边框*/
+  /*顶部有白色的边框, 并且是1像素的*/
   top-border-1px(#e4e4e4)
   position fixed
-  z-index 100
+  z-index 0
   left 0
   right 0
   bottom 0
-  background-color #fff
-  width 100%
+  background-color $backgroundColor
+  width auto
   height 50px
   display flex
   .guide_item
@@ -63,11 +64,11 @@ export default {
     flex-direction column
     align-items center
     margin 5px
-    color #999999
+    color #999
     &.on
       color #02a774
     span
-      font-size 12px
+      font-size 14px
       margin-top 2px
       margin-bottom 2px
       .iconfont
