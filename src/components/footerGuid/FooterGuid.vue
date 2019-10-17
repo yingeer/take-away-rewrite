@@ -24,13 +24,10 @@
     </span>
     <span>我的</span>
     </div>
-    <!-- <a-button type="primary">Button</a-button> -->
   </footer>
 </template>
 
 <script>
-import { Button } from 'ant-design-vue'
-
 export default {
   methods: {
     goto (path) {
@@ -42,9 +39,6 @@ export default {
       return this.$route.path === path
     }
   },
-  components: {
-    AButton: Button
-  }
 }
 </script>
 
