@@ -24,7 +24,6 @@
     </span>
     <span>我的</span>
     </div>
-    <el-button type="primary">主要按钮</el-button>
   </footer>
 </template>
 

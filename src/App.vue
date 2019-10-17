@@ -1,17 +1,18 @@
 <template>
     <div id="app">
         <router-view></router-view>
-        <el-button type="primary">危险按钮</el-button>
         <footer-guide></footer-guide>
     </div>
 </template>
 
 <script>
 import FooterGuide from './components/footerGuid/FooterGuid.vue'
+import Msite from './pages/miste/Msite.vue'
 
 export default {
   components: {
-    FooterGuide
+    FooterGuide,
+    Msite
   }
 }
 </script>
