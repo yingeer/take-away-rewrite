@@ -24,6 +24,7 @@
     </span>
     <span>我的</span>
     </div>
+    <el-button type="primary">主要按钮</el-button>
   </footer>
 </template>
 
@@ -38,7 +39,7 @@ export default {
       // 判断path是否为当前路由
       return this.$route.path === path
     }
-  },
+  }
 }
 </script>
 
