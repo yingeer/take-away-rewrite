@@ -31,10 +31,12 @@
 export default {
   methods: {
     gotoPage (path) {
-
+      // 路由跳转
+      this.router.replace(path)
     },
     isCurrent (path) {
-
+      // 判断path是否为当前路由
+      return this.$route.path === path
     }
   }
 }

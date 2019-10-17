@@ -11,7 +11,7 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/msite',
+      path: '/msite/:id/:userName',
       name: 'misite',
       component: Msite
     },
