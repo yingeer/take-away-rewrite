@@ -6,14 +6,19 @@
 </template>
 
 <script>
-import FooterGuide from './components/footerGuid/FooterGuid.vue'
-import Msite from './pages/miste/Msite.vue'
+// import FooterGuide from './components/footerGuide/FooterGuide.vue'
+// import Msite from './pages/miste/Msite.vue'
+import requireComponents from './utils/requireComponents.js'
 
+const modules1 = requireComponents(require.context('./components/footerGuide/', true, /\.vue$/))
+const modules2 = requireComponents(require.context('./pages/', true, /\.vue$/))
+const modules = {...modules1, ...modules2}
 export default {
-  components: {
-    FooterGuide,
-    Msite
-  }
+  // components: {
+  //   FooterGuide,
+  //   Msite
+  // }
+  components: modules
 }
 </script>
 
