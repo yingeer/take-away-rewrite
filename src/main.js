@@ -11,14 +11,11 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 Vue.prototype.$axios = axios
 FastClick.attach(document.body)
-
 // new Vue(内部的this已经指向vm)
 new Vue({
   el: '#app',
   router,
   components: { App },
   template: '<App/>',
-  render: h => {
-    return h(App)
-  }
+  render: h => h(App)
 })
